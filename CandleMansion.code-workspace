@@ -1,0 +1,883 @@
+{
+	"folders": [
+		{
+			"name": "CandleMansion",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "D:\\UE_5.3"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "CandleMansion Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CandleMansion",
+					"Win64",
+					"Debug",
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE_5.3"
+				}
+			},
+			{
+				"label": "CandleMansion Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CandleMansion",
+					"Win64",
+					"Debug",
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CandleMansion Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE_5.3"
+				}
+			},
+			{
+				"label": "CandleMansion Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CandleMansion",
+					"Win64",
+					"Debug",
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE_5.3"
+				}
+			},
+			{
+				"label": "CandleMansion Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CandleMansion",
+					"Win64",
+					"DebugGame",
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE_5.3"
+				}
+			},
+			{
+				"label": "CandleMansion Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CandleMansion",
+					"Win64",
+					"DebugGame",
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CandleMansion Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE_5.3"
+				}
+			},
+			{
+				"label": "CandleMansion Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CandleMansion",
+					"Win64",
+					"DebugGame",
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE_5.3"
+				}
+			},
+			{
+				"label": "CandleMansion Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CandleMansion",
+					"Win64",
+					"Development",
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE_5.3"
+				}
+			},
+			{
+				"label": "CandleMansion Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CandleMansion",
+					"Win64",
+					"Development",
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CandleMansion Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE_5.3"
+				}
+			},
+			{
+				"label": "CandleMansion Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CandleMansion",
+					"Win64",
+					"Development",
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE_5.3"
+				}
+			},
+			{
+				"label": "CandleMansion Win64 Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CandleMansion",
+					"Win64",
+					"Test",
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE_5.3"
+				}
+			},
+			{
+				"label": "CandleMansion Win64 Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CandleMansion",
+					"Win64",
+					"Test",
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CandleMansion Win64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE_5.3"
+				}
+			},
+			{
+				"label": "CandleMansion Win64 Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CandleMansion",
+					"Win64",
+					"Test",
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE_5.3"
+				}
+			},
+			{
+				"label": "CandleMansion Win64 Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CandleMansion",
+					"Win64",
+					"Shipping",
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE_5.3"
+				}
+			},
+			{
+				"label": "CandleMansion Win64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CandleMansion",
+					"Win64",
+					"Shipping",
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CandleMansion Win64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE_5.3"
+				}
+			},
+			{
+				"label": "CandleMansion Win64 Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CandleMansion",
+					"Win64",
+					"Shipping",
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE_5.3"
+				}
+			},
+			{
+				"label": "CandleMansion IOS Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CandleMansion",
+					"IOS",
+					"Debug",
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE_5.3"
+				}
+			},
+			{
+				"label": "CandleMansion IOS Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CandleMansion",
+					"IOS",
+					"Debug",
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CandleMansion IOS Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE_5.3"
+				}
+			},
+			{
+				"label": "CandleMansion IOS Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CandleMansion",
+					"IOS",
+					"Debug",
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE_5.3"
+				}
+			},
+			{
+				"label": "CandleMansion IOS DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CandleMansion",
+					"IOS",
+					"DebugGame",
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE_5.3"
+				}
+			},
+			{
+				"label": "CandleMansion IOS DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CandleMansion",
+					"IOS",
+					"DebugGame",
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CandleMansion IOS DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE_5.3"
+				}
+			},
+			{
+				"label": "CandleMansion IOS DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CandleMansion",
+					"IOS",
+					"DebugGame",
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE_5.3"
+				}
+			},
+			{
+				"label": "CandleMansion IOS Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CandleMansion",
+					"IOS",
+					"Development",
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE_5.3"
+				}
+			},
+			{
+				"label": "CandleMansion IOS Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CandleMansion",
+					"IOS",
+					"Development",
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CandleMansion IOS Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE_5.3"
+				}
+			},
+			{
+				"label": "CandleMansion IOS Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CandleMansion",
+					"IOS",
+					"Development",
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE_5.3"
+				}
+			},
+			{
+				"label": "CandleMansion IOS Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CandleMansion",
+					"IOS",
+					"Test",
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE_5.3"
+				}
+			},
+			{
+				"label": "CandleMansion IOS Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CandleMansion",
+					"IOS",
+					"Test",
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CandleMansion IOS Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE_5.3"
+				}
+			},
+			{
+				"label": "CandleMansion IOS Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CandleMansion",
+					"IOS",
+					"Test",
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE_5.3"
+				}
+			},
+			{
+				"label": "CandleMansion IOS Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CandleMansion",
+					"IOS",
+					"Shipping",
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE_5.3"
+				}
+			},
+			{
+				"label": "CandleMansion IOS Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CandleMansion",
+					"IOS",
+					"Shipping",
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CandleMansion IOS Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE_5.3"
+				}
+			},
+			{
+				"label": "CandleMansion IOS Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CandleMansion",
+					"IOS",
+					"Shipping",
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE_5.3"
+				}
+			},
+			{
+				"label": "CandleMansionEditor Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CandleMansionEditor",
+					"Win64",
+					"Debug",
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE_5.3"
+				}
+			},
+			{
+				"label": "CandleMansionEditor Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CandleMansionEditor",
+					"Win64",
+					"Debug",
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CandleMansionEditor Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE_5.3"
+				}
+			},
+			{
+				"label": "CandleMansionEditor Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CandleMansionEditor",
+					"Win64",
+					"Debug",
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE_5.3"
+				}
+			},
+			{
+				"label": "CandleMansionEditor Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CandleMansionEditor",
+					"Win64",
+					"DebugGame",
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE_5.3"
+				}
+			},
+			{
+				"label": "CandleMansionEditor Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CandleMansionEditor",
+					"Win64",
+					"DebugGame",
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CandleMansionEditor Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE_5.3"
+				}
+			},
+			{
+				"label": "CandleMansionEditor Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CandleMansionEditor",
+					"Win64",
+					"DebugGame",
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE_5.3"
+				}
+			},
+			{
+				"label": "CandleMansionEditor Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CandleMansionEditor",
+					"Win64",
+					"Development",
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE_5.3"
+				}
+			},
+			{
+				"label": "CandleMansionEditor Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CandleMansionEditor",
+					"Win64",
+					"Development",
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CandleMansionEditor Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE_5.3"
+				}
+			},
+			{
+				"label": "CandleMansionEditor Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CandleMansionEditor",
+					"Win64",
+					"Development",
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE_5.3"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch CandleMansion (Debug)",
+				"request": "launch",
+				"program": "D:\\UnrealProjects\\CandleMansion\\Binaries\\Win64\\UnrealGame-Win64-Debug.exe",
+				"preLaunchTask": "CandleMansion Win64 Debug Build",
+				"args": [
+				],
+				"cwd": "D:\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "D:\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch CandleMansion (DebugGame)",
+				"request": "launch",
+				"program": "D:\\UnrealProjects\\CandleMansion\\Binaries\\Win64\\UnrealGame-Win64-DebugGame.exe",
+				"preLaunchTask": "CandleMansion Win64 DebugGame Build",
+				"args": [
+				],
+				"cwd": "D:\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "D:\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch CandleMansion (Development)",
+				"request": "launch",
+				"program": "D:\\UnrealProjects\\CandleMansion\\Binaries\\Win64\\UnrealGame.exe",
+				"preLaunchTask": "CandleMansion Win64 Development Build",
+				"args": [
+				],
+				"cwd": "D:\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "D:\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch CandleMansion (Test)",
+				"request": "launch",
+				"program": "D:\\UnrealProjects\\CandleMansion\\Binaries\\Win64\\UnrealGame-Win64-Test.exe",
+				"preLaunchTask": "CandleMansion Win64 Test Build",
+				"args": [
+				],
+				"cwd": "D:\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "D:\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch CandleMansion (Shipping)",
+				"request": "launch",
+				"program": "D:\\UnrealProjects\\CandleMansion\\Binaries\\Win64\\UnrealGame-Win64-Shipping.exe",
+				"preLaunchTask": "CandleMansion Win64 Shipping Build",
+				"args": [
+				],
+				"cwd": "D:\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "D:\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch CandleMansionEditor (Debug)",
+				"request": "launch",
+				"program": "D:\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-Debug.exe",
+				"preLaunchTask": "CandleMansionEditor Win64 Debug Build",
+				"args": [
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject"
+				],
+				"cwd": "D:\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "D:\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch CandleMansionEditor (DebugGame)",
+				"request": "launch",
+				"program": "D:\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
+				"preLaunchTask": "CandleMansionEditor Win64 DebugGame Build",
+				"args": [
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject"
+				],
+				"cwd": "D:\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "D:\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch CandleMansionEditor (Development)",
+				"request": "launch",
+				"program": "D:\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+				"preLaunchTask": "CandleMansionEditor Win64 Development Build",
+				"args": [
+					"D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject"
+				],
+				"cwd": "D:\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "D:\\UE_5.3"
+				}
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Win64 Development Build",
+				"program": "D:\\UE_5.3\\Engine\\Build\\BatchFiles\\RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=D:\\UnrealProjects\\CandleMansion\\CandleMansion.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "externalTerminal",
+				"stopAtEntry": false,
+				"cwd": "D:\\UE_5.3"
+			}
+		]
+	}
+}
