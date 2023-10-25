@@ -2,6 +2,10 @@
 .vs/
 .vscode/
 
+#Gameplay logs
+
+GameplayLogs/*
+
 # Compiled Object files
 *.slo
 *.lo
