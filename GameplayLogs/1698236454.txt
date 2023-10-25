@@ -1,0 +1,3 @@
+
+[12:20:54.128] Game log for ID: 1698236454
+[12:20:54.131] Player has collided with StaticMeshActor_4
