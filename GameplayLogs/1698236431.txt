@@ -1,0 +1,15 @@
+
+[12:20:31.278] Game log for ID: 1698236431
+[12:20:31.280] Player has collided with StaticMeshActor_4
+[12:20:32.166] Player has stopped colliding with StaticMeshActor_10
+[12:20:32.258] Player has stopped colliding with StaticMeshActor_4
+[12:20:33.983] Player has collided with Sofa_C_1
+[12:20:36.409] Player has stopped colliding with Sofa_C_1
+[12:20:37.676] Player has collided with TV_C_1
+[12:20:38.984] Player tried to detect an object
+[12:20:38.984] Total object detection tries: 1
+[12:20:38.985] Player detected TV with line trace
+[12:20:43.453] Player has stopped colliding with TV_C_1
+[12:20:44.560] Player tried to detect an object
+[12:20:44.561] Total object detection tries: 2
+[12:20:44.561] Player detected TV with line trace

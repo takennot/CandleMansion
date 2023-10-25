@@ -1,0 +1,8 @@
+
+[12:16:49.144] Game log for ID: 1698236209
+[12:16:49.520] Player has collided with StaticMeshActor_4
+[12:16:50.787] Player has stopped colliding with StaticMeshActor_10
+[12:16:50.833] Player has stopped colliding with StaticMeshActor_4
+[12:16:52.422] Player has collided with Sofa_C_1
+[12:16:53.801] Player has stopped colliding with Sofa_C_1
+[12:16:55.50] Player has collided with Sofa_C_1
