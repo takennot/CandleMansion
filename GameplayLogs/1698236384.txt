@@ -1,5 +1,0 @@
-
-[12:19:44.727] Game log for ID: 1698236384
-[12:19:44.730] Player has collided with StaticMeshActor_4
-[12:19:45.795] Player has stopped colliding with StaticMeshActor_10
-[12:19:45.870] Player has stopped colliding with StaticMeshActor_4
